@@ -1,0 +1,49 @@
+COMO SE MOVIMENTAR PELO TERMINAL:
+
+cd nome_da_pasta
+entra na pasta
+
+cd ..
+recua uma pasta para trás
+
+dir
+exibe tudo no diretório atual
+
+
+git config --global user.name “[nome sobrenome]”
+git config --global user.email “[algum email válido]”
+
+git init
+inicia um novo repositório na pasta atual
+
+git clone [url do repositório online]
+Traz um repositório da internet e clona para seu computador
+
+git status
+exibe os status do diretório atual que você está
+
+git add [nome do arquivo]
+adiciona arquivos que você quer que fique no próximo commit
+
+git add .
+adiciona tudo de arquivo que foi modificado, é muito usado para não ter que ficar dando git add em cada arquivo mudado.
+
+git commit -m "mensagem descritiva(recomendo usar o padrão conventional commits)"
+cria um commit com os arquivos adicionadados pelo git add
+
+git push origin [nome da branch]
+joga os commits locais criados por você para o repositório remoto na internet atual na branch escolhida.
+
+
+git branch [nome da branch]
+cria uma nova branch
+
+git checkout [nome da branch]
+troca para branch que você quer
+
+
+git log
+exibe histórico de commits do mais antigo até o mais novo
+
+git revert [código do commit obtido no git log]
+É a forma recomendada de reverter um commit, ele cria um commit novo baseado em um anterior e através dele você pode commitar novamente para corrigir. 
