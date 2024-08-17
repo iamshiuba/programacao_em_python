@@ -21,22 +21,27 @@
     <form action="processa.html" method="post">
         <div>
         <input type="text" id="nome" name="nome"
-         placeholder="Nome"/>
+         placeholder="Nome" required="true"/>
         </div>
 
         <div>
-        <input type="text" id="tdl" name="tipo_de_lojas"
-         placeholder="Tipo de lojas"/>
+        <label>Tipo de Loja</label>
+        
+        <input type="checkbox" id="tipo1" name="tipo" value="Loja">
+        <label>Loja</label>
+
+        <input type="checkbox" id="tipo2" name="tipo" value="Loja">
+        <label>Stand</label>
         </div>
 
         <div>
         <input type="text" id="e_mail" name="e_mail"
-         placeholder="usuário@email.dominio"/>
+         placeholder="usuário@email.dominio" required="true"/>
         </div>
 
         <div>
         <input type="text" id="tel" name="tel"
-         placeholder="(00) 0000-0000"/>
+         placeholder="(00) 0000-0000" required="true"/>
         </div>
 
         <div>

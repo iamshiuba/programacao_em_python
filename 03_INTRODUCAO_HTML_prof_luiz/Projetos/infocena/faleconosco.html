@@ -8,6 +8,7 @@
 <body>
     <nav>
         <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
         <a href="promocao.html">Promoções</a>
         <a href="lojas.html">Nossas Lojas</a>
         <a href="quemsomos.html">Quem Somos</a>
@@ -21,12 +22,12 @@
     <form action="processa.html" method="post">
         <div>
             <input type="text" id="nome" name="nome"
-             placeholder="Nome"/>
+             placeholder="Nome" required="true"/>
         </div>
 
         <div>
             <input type="text" id="tel" name="telefone"
-             placeholder="(00) 0000-0000"/>
+             placeholder="(00) 0000-0000" required="true"/>
         </div>
 
         <select name="motivo" id="motivo">
@@ -37,12 +38,12 @@
 
         <div>
             <input type="email" id="e_mail" name="e_mail"
-             placeholder="usuário@email.dominio"/>
+             placeholder="usuário@email.dominio" required="true"/>
         </div>
 
         <div>
-            <input type="text" id="mensagem" name="mensagem"
-             placeholder="Mensagem"/>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="msg"></textarea>
         </div>
 
         <div>
