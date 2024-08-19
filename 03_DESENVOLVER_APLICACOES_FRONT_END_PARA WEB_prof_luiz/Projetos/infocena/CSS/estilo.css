@@ -1,0 +1,18 @@
+img{
+    resize: both;
+    max-width: 25%; 
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 0, 153);
+}
+
+p{
+    color: #05230c;
+}
+
+label{
+    color: rgb(255, 0, 0);
+}
