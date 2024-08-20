@@ -22,34 +22,32 @@
     
     <form action="processa.html" method="post">
         <div>
+            <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome"
-             placeholder="Nome" required="true"/>
+             placeholder="Nome" required="true" class="entrada"/>
         </div>
-
         <div>
+            <label for="telefone">Telefone</label>
             <input type="text" id="tel" name="telefone"
-             placeholder="(00) 0000-0000" required="true"/>
+             placeholder="(00) 0000-0000" required="true" class="entrada"/>
         </div>
-
-        <select name="motivo" id="motivo">
+        <select name="motivo" id="motivo" class="entrada">
             <option value="recla">Reclamação</option>
             <option value="elogio">Elogio</option>
             <option value="suge">Sugestão</option>
         </select>
-
         <div>
+            <label for="e_mail">E-mail</label>
             <input type="email" id="e_mail" name="e_mail"
              placeholder="usuário@email.dominio" required="true"/>
         </div>
-
         <div>
             <label for="mensagem">Mensagem</label>
             <textarea name="mensagem" id="msg"></textarea>
         </div>
-
         <div>
-            <input type="submit" value="Enviar"/>
-            <input type="reset" value="Limpar"/>
+            <input type="submit" value="Enviar" class="falconalu"/>
+            <input type="reset" value="Limpar" class="falconalu"/>
         </div>
     </form>
 </body>

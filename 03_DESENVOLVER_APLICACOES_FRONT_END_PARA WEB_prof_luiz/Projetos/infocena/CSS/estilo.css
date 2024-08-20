@@ -1,18 +1,57 @@
+nav{
+    margin-top: 20px;
+    margin-bottom: 30px;
+} /* espaçamento do menu */
+a{
+    text-decoration:none;
+    margin-right: 10px;
+    color:#0000FF
+} /* espaçamento do link */
+
+a:hover{
+    color:#7FFF00;
+}
+
 img{
     resize: both;
-    max-width: 25%; 
+    width: 100px; 
     height: auto;
-}
+} /* redimensionamento universal de imagens */
 
 h1{
     text-align: center;
     color: rgb(255, 0, 153);
-}
+} /* coloração dos títulos */
 
 p{
     color: #05230c;
-}
+} /* coloração dos parágrafos */
 
 label{
     color: rgb(255, 0, 0);
+} /* coloração de label */
+
+div{
+    padding-bottom: 10px;
 }
+
+/* # é utilizado para id */
+#especial{
+    text-align: right;
+    color: rgb(159, 159, 33);
+}
+
+#homeimg1{
+    resize: both;
+    width: 300px;
+    height: auto;
+} /* redimensionamento de imagem do index */
+
+/* . é utilizado para class */
+.entrada{
+    width: 300px;
+} /* tamanho das caixas de texto */
+
+.falconalu{
+    margin-right: 30px;
+} /* espaçamento dos botões Enviar e Limpar */
