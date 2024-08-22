@@ -1,0 +1,4 @@
+Na aula 7 o professor deu continuidade a customização de nosso website Info Cena.
+Ele acabou não passando exercícios.
+obs: a pasta "Projetos" será customizada de acordo com o aluno, no meu caso, ficará ao meu critério
+então recomendo deixar seu projeto separado do meu.
