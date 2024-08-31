@@ -1,0 +1,14 @@
+1) Construa um programa que fará o cálculo do salário líquido de um professor. 
+Para fazer esse cálculo é necessário que sejam lidos o valor da hora aula,
+o número de horas dadas no mês e o avalor total de descontos.
+
+2) Faça um programa que fará a leitura de uma temperatura em graus Fahrenheit e apresentá-la em graus Celsius.
+A fórmula da conversão é C = 5 * (F - 32) / 9
+
+3) Faça um programa que calcula e apresente o valor do volume de um recipiente,
+utilizando a fórmula Volume = 3.14159 * raio * raio * altura
+
+4) Faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre
+a) a idade dessa pessoa em anos;
+b) a idade dessa pessoa em meses;
+c) a idade dessa pessoa em dias;
