@@ -9,6 +9,8 @@ ano = int(input("Ano atual: "))
 idade=ano-ddn
 idade=idade*12
 idade=idade*31-(5*30)+8
+# Uma alternativa sugerida pelo professor
+# idade=meses*30
 
 # Essa é a maneira mais interessante que consegui para chegar
 # a um resultado próximo ao da calculadora. Mas se quiser algo simples,
@@ -18,5 +20,3 @@ print(f"""Idade: {idade}
       Idade em dias: {idade*31-(5*30)+8}
       """)
 
-# Uma alternativa sugerida pelo professor
-# idade=meses*30
