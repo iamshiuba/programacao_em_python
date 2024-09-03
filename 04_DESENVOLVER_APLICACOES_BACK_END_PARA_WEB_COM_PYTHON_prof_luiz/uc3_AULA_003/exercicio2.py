@@ -11,4 +11,4 @@ elif idade >= 14 and idade <= 17:
 elif idade >= 18:
     print("nadador adulto")
 else:
-    print("idade inválida")
+    print("categoria inválida")
