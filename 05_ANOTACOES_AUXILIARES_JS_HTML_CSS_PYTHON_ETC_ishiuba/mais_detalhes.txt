@@ -12,3 +12,4 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction
 https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
 OBS: alguns dos links foram disponibilizados pelos professores! Seja grato a eles (profs Caio e Luiz R.)
+OBS 2: Substitui as minhas anotações de python pelo pdf que o prof Luiz nos disponibilizou.
