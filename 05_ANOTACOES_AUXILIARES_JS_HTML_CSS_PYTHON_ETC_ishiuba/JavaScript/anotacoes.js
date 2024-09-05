@@ -19,7 +19,7 @@ let idade = 25; idade = 30; // idade agora vale 30
 // Exemplo: 
 const PI = 3.14; PI = 4; // Erro! PI é uma constante e não pode ser alterada.
 
-// A palavra-chave "var"   usada para criar uma variável que pode ser alterada, mas tem um escopo mais amplo do que "let" e "const".
+// A palavra-chave "var" é usada para criar uma variável que pode ser alterada, mas tem um escopo mais amplo do que "let" e "const".
 // Exemplo: 
 var nome = "João"; // nome é uma variável global e pode ser acessada em qualquer lugar do código
 
