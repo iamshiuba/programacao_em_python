@@ -1,5 +1,5 @@
-1) Construa um programa que fará o cálculo do salárioConstrua um programa que fará o cálculo do salário
-Exemplo: O usuário informnou "1000" com valor total de "5" como números de parcelas. O programa deverá imprimir "200" 
+1) Construa um programa que fará o cálculo do salário.
+Exemplo: O usuário informou "1000" com valor total de "5" como números de parcelas. O programa deverá imprimir "200" 
 
 2) Faça um programa que converta uma temperatura em Celsius para Fahrenheit utilizando a fórmula abaixo:
 F = 9C / 5 + 32
