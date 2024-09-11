@@ -1,13 +1,15 @@
 vetor = []
 while True:
     numero = int(input("Informe um número: "))
+    vetor.append(numero)
     if numero == 0:
         break
-    vetor.append(numero)
 
-soma = sum(vetor)
+soma = 0
+for i in vetor:
+    soma += i
+
 media = soma / len(vetor)
-
-print(f"A soma é: {soma}")
-print(f"A média é: {media:.2f}")
-print(f"Quantidade de elementos: {len(vetor)}")
+print(f"A soma dos elementos: {soma}")
+print(f"A média dos elementos: {media}")
+print(f"Número de elementos: {len(vetor)}")
