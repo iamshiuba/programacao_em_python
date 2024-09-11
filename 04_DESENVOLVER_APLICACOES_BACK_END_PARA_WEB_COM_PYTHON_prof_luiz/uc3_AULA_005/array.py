@@ -15,3 +15,6 @@ print(f"Quantidade de elementos: {len(vetor)}")
 
 # Primeira posição começa em 0
 print(vetor[0])
+
+for i in vetor:
+    print(i)

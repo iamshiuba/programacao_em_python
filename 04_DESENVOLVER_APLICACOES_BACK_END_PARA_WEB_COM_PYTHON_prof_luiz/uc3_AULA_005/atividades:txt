@@ -1,0 +1,7 @@
+Faça um programa que fará a leitura de indeterminados números
+e esses devem ser armazenados em um vetor.
+
+No final devem ser apresentados a soma, a média
+e o número de elementos desse vetor.
+
+A condição de saída é o usuário digitando o número 0 (zero).
