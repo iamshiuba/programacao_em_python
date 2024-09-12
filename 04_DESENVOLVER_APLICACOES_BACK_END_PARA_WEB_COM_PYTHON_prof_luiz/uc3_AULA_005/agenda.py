@@ -3,6 +3,7 @@ agenda = []
 agenda.append(["Luis", "luis@teste.com"])
 agenda.append(["Renato", "renato@teste.com"])
 agenda.append(["Maria", "maria@gmail.com"])
+agenda.append(["feliciano@gmail.com", "Feliciano"])
 
 for i in agenda:
     print(f'{i[0]} - {i[1]}')
