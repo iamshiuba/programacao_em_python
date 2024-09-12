@@ -1,9 +1,10 @@
 vetor = []
 while True:
     numero = int(input("Informe um número: "))
-    vetor.append(numero)
     if numero == 0:
         break
+    else:
+        vetor.append(numero)
 
 soma = 0
 for i in vetor:
