@@ -1,10 +1,16 @@
 vetor = []
 
 for i in range(15):
-    num = int(input(f"Informe o {i+1}º número: "))
-    vetor.append(num * 3)
+    num = int(input("Informe o número: "))
+    vetor.append(num)
 
-print("Vetor após os cálculos: ")
+for elemento in vetor:
+    valor = elemento * 3
+    print(valor)
 
-for i, num in enumerate(vetor, start=1):
-    print(f"{i}º número: {num}")
+
+# leituras = 1
+# while leituras <= 15:
+#     num = int(input(f"Informe o número: "))
+#     vetor.append(num)
+#     leituras = leituras + 1
