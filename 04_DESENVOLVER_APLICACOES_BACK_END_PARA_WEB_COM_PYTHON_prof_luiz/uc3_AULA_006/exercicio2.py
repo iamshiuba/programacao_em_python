@@ -6,6 +6,7 @@ for i in range(6):
 
 pares = 0
 impares = []
+
 for i in vetor:
     if i % 2 == 0:
         pares += 1
