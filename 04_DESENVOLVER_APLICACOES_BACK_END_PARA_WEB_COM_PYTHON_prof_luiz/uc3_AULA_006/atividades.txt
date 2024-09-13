@@ -1,0 +1,9 @@
+1) Faça um programa que leia um vetor de 15
+posições de números inteiros e multiplique todos por 3.
+Mostre o vetor após os cálculos.
+
+2) Faça um programa que leia um vetor de seis elementos
+numéricos inteiros, calcule e mostre:
+a) A quantidade de números pares
+b) A quantidade de números ímpares
+c) Quais os números ímpares
