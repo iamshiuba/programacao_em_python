@@ -1,5 +1,5 @@
 '''
-array / vetor / conjunto / colecao == lista
+array / vetor / conjunto / colecao = lista
 '''
 # Declarando um vetor
 vetor = []
