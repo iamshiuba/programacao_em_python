@@ -1,19 +1,23 @@
 VALOR = []
-SOMA = 0
-CONTADOR = 0
 
 while True:
-    produto = float(input("Valor: "))
+    preco = float(input("Informe o preço: "))
+    VALOR.append(preco)
     r = input("Deseja continuar? (s/n) ")
-    VALOR.append(produto)
-    if r == 'n' or r == 'N':
+    if r == "n" or r == "N":
         break
+
+QUANT_INF50 = 0
+SOMA_SUP100 = 0
+QUANT_SUP100 = 0
 
 for i in VALOR:
     if i < 50:
-        CONTADOR += 1
-    if i > 100:
-        SOMA += i
+        QUANT_INF50 += 1
+    elif i > 100:
+        SOMA_SUP100 += i
+        QUANT_SUP100 += 1
 
-print(f"Quantidade de produtos com pre o inferior a R$ 50,00: {CONTADOR}")
-print(f"M dia dos pre os dos produtos com pre o superior a R$ 100,00: {SOMA / len([i for i in VALOR if i > 100]):.2f}")
+print(f"Quantidade de produtos com preço inferior a R$ 50,00: {QUANT_INF50}")
+MEDIA_SUP100 = SOMA_SUP100 / QUANT_SUP100
+print(f"Média dos preços superiores a R$ 100: {MEDIA_SUP100:.2f}")
