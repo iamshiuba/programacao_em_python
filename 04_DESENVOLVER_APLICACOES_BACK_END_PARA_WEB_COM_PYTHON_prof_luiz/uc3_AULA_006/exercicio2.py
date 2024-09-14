@@ -1,18 +1,17 @@
 vetor = []
 
 for i in range(6):
-    numero = int(input("Informe o número: "))
+    numero = int(input("Informe um número: "))
     vetor.append(numero)
 
-PARES = 0
-impares = []
+QUANT_PARES = 0
+QUANT_IMPARES = 0
 
-for i in vetor:
-    if i % 2 == 0:
-        PARES += 1
+for elemento in vetor:
+    if elemento % 2 == 0:
+        QUANT_PARES = QUANT_PARES + 1
     else:
-        impares.append(i)
-
-print(f"A quantidade de números PARES é {PARES}")
-print(f"A quantidade de números ímpares é {len(impares)}")
-print(f"Os números ímpares são {impares}")
+        QUANT_IMPARES = QUANT_IMPARES + 1
+        print(elemento)
+print(f"Quantidade de números pares: {QUANT_PARES}")
+print(f"Quantidade de números ímpares: {QUANT_IMPARES}")
