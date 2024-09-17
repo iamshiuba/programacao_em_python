@@ -11,3 +11,4 @@ while True:
 
 for i in produtos:
     print(f'Produto: {i[0]}, preço: {i[1]}, categoria: {i[2]}')
+
