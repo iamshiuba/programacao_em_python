@@ -12,10 +12,9 @@ def incluir():
         p['precoprod'] = preco
         p['catprod'] = cat
         produtos.append(p)
-        r = input("Deseja continuar? (s/n)")
+        r = input("Deseja continuar? (s/n) ")
         if r == 'n' or r == 'N':
             break
-
 
 while True:
     print("Menu")
