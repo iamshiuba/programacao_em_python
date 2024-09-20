@@ -1,6 +1,7 @@
-from cadastro import incluir
+from aula8_correcao_cadastro import incluirAluno
+from aula8_correcao_relatorio import relatorioAluno
 
-alunos []
+alunos = []
 
 while True:
     print("Menu")
@@ -11,6 +12,21 @@ while True:
     if op == 0:
         break
     elif op == 1:
-        incluir(alunos)
+        incluirAluno(alunos)
     elif op == 2:
-        pass
+        relatorioAluno(alunos)
+
+def situacao(m):
+    if m >= 7:
+        return "Aprovado"
+    else:
+        return "Reprovado"
+
+def relatorioAluno(lista):
+    for i in lista:
+        media = (i['nota1'] + i['nota2']) / 2
+        print(f"""{i["nomeAluno"]} - 
+            {i["nota1"]:.2f} - 
+            {i["nota2"]:.2f} - 
+            {media:.2f} - 
+            {situacao(media)}""")
