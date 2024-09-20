@@ -15,12 +15,15 @@ def incluir():
         r = input("Deseja continuar? (s/n) ")
         if r == 'n' or r == 'N':
             break
-
-while True:
+        
+def menu():
     print("Menu")
     print("1 - Cadastro")
     print("2 - Relatório")
     print("0 - Sair")
+
+while True:
+    menu()
     op = int(input("Informe uma opção: "))
     if op == 0:
         break
