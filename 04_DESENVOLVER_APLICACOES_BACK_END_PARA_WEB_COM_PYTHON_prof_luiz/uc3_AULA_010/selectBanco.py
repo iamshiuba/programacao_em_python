@@ -9,7 +9,7 @@ conexao = mysql.connector.connect(
 
 cursor = conexao.cursor()
 
-sql = "select * from alunos"
+sql = "select * from alunos order by nome"
 cursor.execute(sql)
 resultado = cursor.fetchall()
 cursor.close()
