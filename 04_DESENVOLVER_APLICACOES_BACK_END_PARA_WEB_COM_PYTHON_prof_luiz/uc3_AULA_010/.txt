@@ -10,7 +10,7 @@ create table alunos (
     PRIMARY KEY(id)
 );
 
-INSERT INTO `alunos` (nome, nota1, nota2) VALUES ('João', 8.0, 6.0)
+INSERT INTO `alunos` (nome, nota1, nota2) VALUES ('João', 8.0, 6.0);
 INSERT INTO `alunos` (nome, nota1, nota2) VALUES ('Maria', 10, 9.50)
 
 pip  install mysql-connector-python
