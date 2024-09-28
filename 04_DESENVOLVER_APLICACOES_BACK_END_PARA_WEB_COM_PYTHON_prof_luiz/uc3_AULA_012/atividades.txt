@@ -1,0 +1,11 @@
+1) Crie um model Aluno com os seguintes atributos:
+    nome (String com 100 caracteres)
+    telefone (String com 20 caracteres)
+    email com (String do tipo EmailField)
+
+2) Crie um model Professor com os seguintes atributos:
+    nome (String com 100 caracteres)
+    email (String do tipo EmailField)
+    matricula (String com 5 caracteres)
+
+E registre no admin
