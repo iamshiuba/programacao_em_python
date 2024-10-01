@@ -6,3 +6,9 @@ def index(request):
 
 def segundo(request):
     return HttpResponse("<h1>Segunda</h1>")
+
+def pagina(request):
+    return render(request, 'pagina.html')
+
+def mensagem(request):
+    return render(request, 'inicio.html')
