@@ -19,11 +19,13 @@ O curso está dividido em três UCs:
 - Na terceira unidade, o foco se volta ao back-end com a utilização do framework Django. Esta etapa combina os conhecimentos adquiridos na unidade anterior para criar uma aplicação web completa, com foco no desenvolvimento de APIs e integração com bancos de dados. Além disso, há uma leve introdução ao uso de bancos de dados com a ferramenta XAMPP, oferecendo um primeiro contato com a configuração e utilização de bancos de dados em projetos. Os alunos aprendem sobre a arquitetura MVT (Model-View-Template) e como gerenciar rotas, views, templates e modelos no Django, construindo sistemas robustos e escaláveis.
 
 **Tecnologias Utilizadas**
+
 - Linguagens: Python, JavaScript, HTML5, CSS
 - Frameworks: Django (para back-end)
 - Ferramentas: IDE Visual Studio Code (VSCode), XAMPP para banco de dados
 
 **Público-alvo**
+
 O curso é voltado para iniciantes na área de programação ou profissionais de TI que desejam expandir suas habilidades para o desenvolvimento web. Para participar, é necessário possuir conhecimentos básicos de informática e estar familiarizado com editores de texto e planilhas.
 
 **Objetivos do Curso**
