@@ -1,5 +1,5 @@
 Fizemos pequenas alterações no projeto django.
-> Criamos dois diretorios chamado Templates e o outro guia
+> Criamos dois diretorios chamado templates e o outro guia
 > Criamos 3 arquivos html
 > Mexemos nos arquivos "cadastro/urls.py", "cadastro/views.py"
 "webescola/settings.py"
