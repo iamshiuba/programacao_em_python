@@ -22,6 +22,7 @@ O curso está dividido em três UCs:
 - Linguagens: Python, JavaScript, HTML5, CSS
 - Frameworks: Django (para back-end)
 - Ferramentas: IDE Visual Studio Code (VSCode), XAMPP para banco de dados
+
 **Público-alvo**
 O curso é voltado para iniciantes na área de programação ou profissionais de TI que desejam expandir suas habilidades para o desenvolvimento web. Para participar, é necessário possuir conhecimentos básicos de informática e estar familiarizado com editores de texto e planilhas.
 
