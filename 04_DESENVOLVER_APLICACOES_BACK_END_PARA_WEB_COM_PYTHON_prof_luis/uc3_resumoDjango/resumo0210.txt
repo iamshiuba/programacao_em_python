@@ -13,4 +13,4 @@ ao render que criamos para que isso fosse possível:
 
 return render(request, 'inicio.html')
 
-Se você leu até aqui, lembre-se de bebar água. ;)
+Se você leu até aqui, lembre-se de beber água. ;)
