@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content%}
+    <h2>Lista de Alunos</h2>
+    <a href="#" class="btn btn-primary">
+        Cadastrar novo aluno
+    </a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for a in alunos %}
+            <tr>
+                <td>
+                    {{ a.nome }}
+                </td>
+                <td>
+                    {{ a.telefone }}
+                </td>
+                <td>
+                    {{ a.email }}
+                </td>
+                <td>
+                    Alterar Excluir
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

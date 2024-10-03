@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a href="{% url 'index' %}" class="navbar-brand">
+      Sistema Online
+      </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#menu"
+      aria-controls="menu"
+      aria-expanded="false"
+      aria-label="Exibir o menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="{% url 'listarcursos' %}" class="nav-link">Cursos</a>
+        </li>
+        <li class="nav-item">
+          <a href="turmas.html" class="nav-link">Turmas</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'listaralunos' %}" class="nav-link">Alunos</a>
+        </li>
+        <li class="nav-item">
+          <a href="professor.html" class="nav-link">Professores</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
