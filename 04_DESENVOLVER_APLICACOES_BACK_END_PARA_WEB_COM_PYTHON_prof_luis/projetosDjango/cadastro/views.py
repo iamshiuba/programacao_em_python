@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Curso, Aluno
+from .models import Curso, Aluno, Professor
 
 # Create your views here.
 def index(request):
@@ -19,7 +19,11 @@ def mensagem(request):
 def listarcursos(request):
     cursos = Curso.objects.order_by('nome')
     return render(request, 'listarcursos.html', {'cursos': cursos})
-
+#Alunos
 def listaralunos(request):
     alunos = Aluno.objects.order_by('nome')
     return render(request, 'listaralunos.html', {'alunos': alunos})
+#Professores
+def listarprofessores(request):
+    professores = Professor.objects.order_by('nome')
+    return render(request, 'listarprofessores.html', {'professores': professores})

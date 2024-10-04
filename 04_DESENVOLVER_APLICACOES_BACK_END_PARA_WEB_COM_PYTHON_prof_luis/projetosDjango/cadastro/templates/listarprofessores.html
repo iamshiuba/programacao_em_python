@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block content%}
-    <h2>Lista de Alunos</h2>
+    <h2>Lista de Professores</h2>
     <a href="#" class="btn btn-primary">
-        Cadastrar novo aluno
+        Cadastrar novo professor
     </a>
     <table class="table table-striped">
         <thead>
@@ -13,13 +13,13 @@
             </tr>
         </thead>
         <tbody>
-            {% for a in alunos %}
+            {% for p in professores %}
             <tr>
                 <td>
-                    {{ a.nome }}
+                    {{ p.nome }}
                 </td>
                 <td>
-                    {{ a.email }}
+                    {{ p.email }}
                 </td>
                 <td>
                     Alterar Excluir

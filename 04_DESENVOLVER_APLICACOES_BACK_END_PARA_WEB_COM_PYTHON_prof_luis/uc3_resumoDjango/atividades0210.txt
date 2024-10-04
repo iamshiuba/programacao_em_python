@@ -1,1 +1,6 @@
 Faça a rotina de listar alunos
+
+1) Criar o mapeamento em "urls.py"
+2) Criar a função em "views.py"
+3) Criar o template (pagina) na pasta "templates"
+4) Fazer o ajuste no menu
