@@ -22,5 +22,5 @@ urlpatterns = [
     #Professores
     path('listarprofessores', views.listarprofessores, name='listarprofessores'),
 
-    path('incluiraluno', views.incluiraluno, name='incluirprofessor'),
+    path('incluirprofessor', views.incluirprofessor, name='incluirprofessor'),
 ]

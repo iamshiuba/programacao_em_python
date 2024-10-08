@@ -45,5 +45,5 @@ def listarprofessores(request):
     professores = Professor.objects.order_by('nome')
     return render(request, 'listarprofessores.html', {'professores': professores})
 
-def incluiraluno(request):
+def incluirprofessor(request):
     return render(request, 'form_professor.html')
