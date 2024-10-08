@@ -11,8 +11,16 @@ urlpatterns = [
 
     #Cursos
     path('listarcursos', views.listarcursos, name='listarcursos'),
+
+    path('incluircurso', views.incluircurso, name='incluircurso'),
+
     #Alunos
     path('listaralunos', views.listaralunos, name='listaralunos'),
+    
+    path('incluiraluno', views.incluiraluno, name='incluiraluno'),
+
     #Professores
     path('listarprofessores', views.listarprofessores, name='listarprofessores'),
+
+    path('incluiraluno', views.incluiraluno, name='incluirprofessor'),
 ]

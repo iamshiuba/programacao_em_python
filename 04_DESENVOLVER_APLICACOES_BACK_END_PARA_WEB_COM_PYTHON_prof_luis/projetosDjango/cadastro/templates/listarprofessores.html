@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content%}
     <h2>Lista de Professores</h2>
-    <a href="#" class="btn btn-primary">
+    <a href="{% url 'incluirprofessor' %}" class="btn btn-primary">
         Cadastrar novo professor
     </a>
     <table class="table table-striped">
