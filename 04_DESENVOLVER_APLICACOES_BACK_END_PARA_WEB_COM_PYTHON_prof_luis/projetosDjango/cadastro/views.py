@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .models import Curso, Aluno, Professor
-from cadastro.forms import CursoForm
+from cadastro.forms import AlunoForm, CursoForm, ProfessorForm
 
 # Create your views here.
 def index(request):
@@ -44,14 +44,19 @@ def listaralunos(request):
 
 def incluiraluno(request):
     if request.method == 'POST':
-        form = CursoForm(request.POST)
+        form = AlunoForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('listaralunos')
 
-    form = CursoForm()
+    form = AlunoForm()
     return render(request, 'form_aluno.html', {'formulario':form})
 
+def alteraraluno(request, codigo):
+    a = Aluno.objects.get(id=codigo)
+
+    form = AlunoForm(instance=a)
+    return render(request, 'form_aluno.html', {'formulario': form})
 
 #Professores
 def listarprofessores(request):
@@ -60,10 +65,16 @@ def listarprofessores(request):
 
 def incluirprofessor(request):
     if request.method == 'POST':
-        form = CursoForm(request.POST)
+        form = ProfessorForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('listarprofessores')
 
-    form = CursoForm()
+    form = ProfessorForm()
     return render(request, 'form_professor.html', {'formulario':form})
+
+def alterarprofessor(request, codigo):
+    p = Professor.objects.get(id=codigo)
+
+    form = ProfessorForm(instance=p)
+    return render(request, 'form_professor.html', {'formulario': form})

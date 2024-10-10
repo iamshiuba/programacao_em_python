@@ -22,7 +22,8 @@
                     {{ a.email }}
                 </td>
                 <td>
-                    Alterar Excluir
+                    <a href="{% url 'alteraraluno' a.id %}" class="btn btn-secondary">Alterar</a>
+                    <a href="#" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
             {% endfor %}

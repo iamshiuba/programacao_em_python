@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block content%}
+{% block content %}
     <h2>Lista de Professores</h2>
     <a href="{% url 'incluirprofessor' %}" class="btn btn-primary">
         Cadastrar novo professor
@@ -26,7 +26,8 @@
                     {{ p.email }}
                 </td>
                 <td>
-                    Alterar Excluir
+                    <a href="{% url 'alterarprofessor' p.id %}" class="btn btn-secondary">Alterar</a>
+                    <a href="#" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
             {% endfor %}
