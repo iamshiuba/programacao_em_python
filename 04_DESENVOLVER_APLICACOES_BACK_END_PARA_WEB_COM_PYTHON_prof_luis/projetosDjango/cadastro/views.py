@@ -38,7 +38,15 @@ def listaralunos(request):
     return render(request, 'listaralunos.html', {'alunos': alunos})
 
 def incluiraluno(request):
-    return render(request, 'form_aluno.html')
+    if request.method == 'POST':
+        form = CursoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('listaralunos')
+
+    form = CursoForm()
+    return render(request, 'form_aluno.html', {'formulario':form})
+
 
 #Professores
 def listarprofessores(request):
@@ -46,4 +54,11 @@ def listarprofessores(request):
     return render(request, 'listarprofessores.html', {'professores': professores})
 
 def incluirprofessor(request):
-    return render(request, 'form_professor.html')
+    if request.method == 'POST':
+        form = CursoForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('listarprofessores')
+
+    form = CursoForm()
+    return render(request, 'form_professor.html', {'formulario':form})
