@@ -31,6 +31,11 @@ def incluircurso(request):
     form = CursoForm()
     return render(request, 'form_curso.html', {'formulario':form})
 
+def alterarcurso(request, codigo):
+    c = Curso.objects.get(id=codigo)
+
+    form = CursoForm(instance=c)
+    return render(request, 'form_curso.html', {'formulario': form})
 
 #Alunos
 def listaralunos(request):

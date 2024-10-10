@@ -12,6 +12,8 @@ urlpatterns = [
     #Cursos
     path('listarcursos', views.listarcursos, name='listarcursos'),
 
+    path('alterarcurso/<int:codigo>', views.alterarcurso, name='alterarcurso'),
+
     path('incluircurso', views.incluircurso, name='incluircurso'),
 
     #Alunos
