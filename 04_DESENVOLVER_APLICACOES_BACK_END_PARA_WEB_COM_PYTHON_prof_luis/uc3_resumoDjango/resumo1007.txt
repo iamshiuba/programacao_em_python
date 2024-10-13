@@ -1,8 +1,0 @@
-Novidades:
-> Criamos dois templates de formulários (form_aluno, form_curso)
-> Fizemos um código em python(forms.py) para automatizar a criação dos formulários
-> Alteramos o href de listaralunos.html e listarcursos.html para que sejamos
-redirecionados ao formulário
-> Mexemos em views e urls.py incluindo as novas funções.
-
-E pra finalizar, eu já fiz a parte do professor.
