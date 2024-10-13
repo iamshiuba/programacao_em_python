@@ -1,4 +1,0 @@
-Instalamos o django (codigo de instalação: pip install django) OBS: EXECUTE NO TERMINAL, NÃO É PRA CRIAR UM ARQUIVO COM ESSA LINHA!
-Criamos uma nova pasta chamada 'projetosDjango'
-adicionamos as aplicações 'webescola' e 'cadastro'
-criamos um usuario (código: python manage.py createsuperuser)(usuario genérico > 'usuario: username', 'senha: sqluser')

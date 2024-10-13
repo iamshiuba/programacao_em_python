@@ -1,7 +1,0 @@
-Na aula 11 devido questões do curto tempo que tivemos(2 horas) abordamos os mesmos assuntos aula passada: 
-INÍCIO DE ORIENTAÇÃO A OBJETOS.
-
-Classe
-Objeto
-Atributos
-Construtor/Constructor

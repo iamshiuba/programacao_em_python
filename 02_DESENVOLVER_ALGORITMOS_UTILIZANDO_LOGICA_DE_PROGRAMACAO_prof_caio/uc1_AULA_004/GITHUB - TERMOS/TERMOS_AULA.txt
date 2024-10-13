@@ -1,3 +1,0 @@
-GIT PUSH -> Push significa empurrar, ao fazer o push você está mandando os arquivos para o repositório da internet.
-GIT PULL -> Pull significa puxar, ao vezes o repositório remoto pode estar mais atualizado que o repositório local, então você faz o git pull para atualizar o repositório local desatualizado com os arquivos do repositório da internet.
-GIT CLONE -> Muitas vezes você encontra um repositório online que você quer trazer para seu computador, com o comando git clone isso é possível clonando uma versão do repositório para sua máquina.

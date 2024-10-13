@@ -1,3 +1,0 @@
-Na aula de hoje, tivemos aquela recapitulação que só deus que nos acuda e depois
-tivermos a continuação do projeto django. Algumas alterações foram feitas, então 
-é bom dar uma olhada na subpasta "cadastro".
