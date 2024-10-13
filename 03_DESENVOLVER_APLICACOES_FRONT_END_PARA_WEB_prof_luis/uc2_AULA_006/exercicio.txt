@@ -1,3 +1,0 @@
-0) Coloque todas as labels na cor vermelha
-1) Faça com que os itens do menu tenham um espaço de 20px para o topo, 30px para baixo e 10px para os lados.
-2) Faça com que os botões Enviar e Limpar tenham um espaço de 30px entre eles
