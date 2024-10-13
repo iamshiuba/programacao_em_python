@@ -1,5 +1,0 @@
-GIT -> https://git-scm.com/downloads
-
-GITHUB DESKTOP -> https://desktop.github.com/download/
-
-Documentação oficial do GITHUB DESKTOP -> https://docs.github.com/pt/desktop
