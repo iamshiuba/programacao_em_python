@@ -77,6 +77,11 @@ def alteraraluno(request, codigo):
     form = AlunoForm(instance=a)
     return render(request, 'form_aluno.html', {'formulario': form})
 
+def excluiraluno(request, codigo):
+    a = Aluno.objects.get(id=codigo)
+    a.delete()
+    return redirect('listaralunos')
+
 #Professores
 def listarprofessores(request):
     professores = Professor.objects.order_by('nome')
@@ -104,3 +109,8 @@ def alterarprofessor(request, codigo):
 
     form = ProfessorForm(instance=p)
     return render(request, 'form_professor.html', {'formulario': form})
+
+def excluirprofessor(request, codigo):
+    p = Professor.objects.get(id=codigo)
+    p.delete()
+    return redirect('listarprofessores')
