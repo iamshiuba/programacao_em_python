@@ -16,6 +16,8 @@ urlpatterns = [
 
     path('incluircurso', views.incluircurso, name='incluircurso'),
 
+    path('excluircurso/<int:codigo>', views.excluircurso, name='excluircurso'),
+
     #Alunos
     path('listaralunos', views.listaralunos, name='listaralunos'),
 
