@@ -34,20 +34,8 @@ def incluircurso(request):
 def alterarcurso(request, codigo):
     c = Curso.objects.get(id=codigo)
 
-    if request.method == 'POST':
-        form = CursoForm(request.POST,instance=c)
-
-        if form.is_valid():
-            form.save()
-            return redirect('listarcursos')
-        
     form = CursoForm(instance=c)
     return render(request, 'form_curso.html', {'formulario': form})
-
-def excluircurso(request, codigo):
-    c = Curso.objects.get(id=codigo)
-    c.delete()
-    return redirect('listarcursos')
 
 #Alunos
 def listaralunos(request):
@@ -66,13 +54,6 @@ def incluiraluno(request):
 
 def alteraraluno(request, codigo):
     a = Aluno.objects.get(id=codigo)
-
-    if request.method == 'POST':
-        form = AlunoForm(request.POST,instance=a)
-        
-        if form.is_valid():
-            form.save()
-            return redirect('listaralunos')
 
     form = AlunoForm(instance=a)
     return render(request, 'form_aluno.html', {'formulario': form})
@@ -94,13 +75,6 @@ def incluirprofessor(request):
 
 def alterarprofessor(request, codigo):
     p = Professor.objects.get(id=codigo)
-
-    if request.method == 'POST':
-        form = ProfessorForm(request.POST,instance=p)
-        
-        if form.is_valid():
-            form.save()
-            return redirect('listarprofessores')
 
     form = ProfessorForm(instance=p)
     return render(request, 'form_professor.html', {'formulario': form})
