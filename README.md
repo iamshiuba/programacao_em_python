@@ -6,4 +6,4 @@
 - Entender melhor como funciona um algoritmo
 - Usar em prática o que aprendeu para desenvolver algoritmos simples
 
-> console.log('Let's do our best!')
+> console.log("Let's do our best!")
