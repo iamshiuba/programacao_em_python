@@ -16,6 +16,8 @@ urlpatterns = [
 
     path('incluircurso', views.incluircurso, name='incluircurso'),
 
+    path('excluircurso/<int:codigo>', views.excluircurso, name='excluircurso'),
+
     #Alunos
     path('listaralunos', views.listaralunos, name='listaralunos'),
 
@@ -23,10 +25,19 @@ urlpatterns = [
 
     path('incluiraluno', views.incluiraluno, name='incluiraluno'),
 
+    path('excluiraluno/<int:codigo>', views.excluiraluno, name='excluiraluno'),
+
     #Professores
     path('listarprofessores', views.listarprofessores, name='listarprofessores'),
 
     path('alterarprofessor/<int:codigo>', views.alterarprofessor, name='alterarprofessor'),
 
     path('incluirprofessor', views.incluirprofessor, name='incluirprofessor'),
+
+    path('excluirprofessor/<int:codigo>', views.excluirprofessor, name='excluirprofessor'),
+
+    #Turmas
+    path('listarturmas', views.listarturmas, name='listarturmas'),
+
+    path('incluirturma', views.incluirturma, name='incluirturma'),
 ]

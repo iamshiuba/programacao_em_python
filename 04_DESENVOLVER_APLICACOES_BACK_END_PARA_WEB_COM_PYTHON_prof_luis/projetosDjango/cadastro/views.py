@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
-from .models import Curso, Aluno, Professor
-from cadastro.forms import AlunoForm, CursoForm, ProfessorForm
+from .models import Curso, Aluno, Professor, Turma
+from cadastro.forms import AlunoForm, CursoForm, ProfessorForm, TurmaForm
 
 # Create your views here.
 def index(request):
@@ -34,8 +34,20 @@ def incluircurso(request):
 def alterarcurso(request, codigo):
     c = Curso.objects.get(id=codigo)
 
+    if request.method == 'POST':
+        form = CursoForm(request.POST,instance=c)
+
+        if form.is_valid():
+            form.save()
+            return redirect('listarcursos')
+        
     form = CursoForm(instance=c)
     return render(request, 'form_curso.html', {'formulario': form})
+
+def excluircurso(request, codigo):
+    c = Curso.objects.get(id=codigo)
+    c.delete()
+    return redirect('listarcursos')
 
 #Alunos
 def listaralunos(request):
@@ -55,8 +67,20 @@ def incluiraluno(request):
 def alteraraluno(request, codigo):
     a = Aluno.objects.get(id=codigo)
 
+    if request.method == 'POST':
+        form = AlunoForm(request.POST,instance=a)
+        
+        if form.is_valid():
+            form.save()
+            return redirect('listaralunos')
+
     form = AlunoForm(instance=a)
     return render(request, 'form_aluno.html', {'formulario': form})
+
+def excluiraluno(request, codigo):
+    a = Aluno.objects.get(id=codigo)
+    a.delete()
+    return redirect('listaralunos')
 
 #Professores
 def listarprofessores(request):
@@ -76,5 +100,27 @@ def incluirprofessor(request):
 def alterarprofessor(request, codigo):
     p = Professor.objects.get(id=codigo)
 
+    if request.method == 'POST':
+        form = ProfessorForm(request.POST,instance=p)
+        
+        if form.is_valid():
+            form.save()
+            return redirect('listarprofessores')
+
     form = ProfessorForm(instance=p)
     return render(request, 'form_professor.html', {'formulario': form})
+
+def excluirprofessor(request, codigo):
+    p = Professor.objects.get(id=codigo)
+    p.delete()
+    return redirect('listarprofessores')
+
+#Turmas
+def listarturmas(request):
+    turmas = Turma.objects.order_by('dataInicio')
+    return render(request, 'listarturmas.html', {'turmas': turmas})
+
+def incluirturma(request):
+    
+    form = TurmaForm()
+    return render(request, 'form_turma.html', {'formulario': form})
