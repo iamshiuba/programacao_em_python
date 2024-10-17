@@ -1,3 +1,4 @@
+> Melhor que estudar através do meu repositório é se inscrever no curso em questão! Se você é do RJ e quer aprender mais, [clique aqui](https://www.rj.senac.br/cursos/ti-e-informatica/programacao-em-python?csrt=10188448771115384169)
 # Curso de Programação em Python - SENAC
 
 Este curso é projetado para capacitar estudantes e profissionais da área de Tecnologia da Informação (TI) a desenvolverem desde algoritmos básicos até aplicações web completas utilizando Python. Com uma carga horária distribuída em três Unidades Curriculares (UCs), o curso oferece uma abordagem prática e interativa para o desenvolvimento de software, combinando teoria e prática através de projetos reais.
@@ -37,4 +38,3 @@ O curso é voltado para iniciantes na área de programação ou profissionais de
 
 Ao concluir o curso, o aluno receberá um certificado do SENAC, comprovando sua formação em Programação em Python.
 
-> Melhor que estudar através do meu repositório é se inscrever no curso em questão! Se você é do RJ e quer aprender mais, [clique aqui](https://www.rj.senac.br/cursos/ti-e-informatica/programacao-em-python?csrt=10188448771115384169)
