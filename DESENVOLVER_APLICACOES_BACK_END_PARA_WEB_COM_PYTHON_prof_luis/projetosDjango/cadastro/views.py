@@ -1,7 +1,7 @@
 from django.shortcuts import redirect, render
 from django.http import HttpResponse
-from .models import Curso, Aluno, Professor
-from cadastro.forms import AlunoForm, CursoForm, ProfessorForm
+from .models import Curso, Aluno, Professor, Turma
+from cadastro.forms import AlunoForm, CursoForm, ProfessorForm, TurmaForm
 
 # Create your views here.
 def index(request):
@@ -114,3 +114,13 @@ def excluirprofessor(request, codigo):
     p = Professor.objects.get(id=codigo)
     p.delete()
     return redirect('listarprofessores')
+
+#Turmas
+def listarturmas(request):
+    turmas = Turma.objects.order_by('dataInicio')
+    return render(request, 'listarturmas.html', {'turmas': turmas})
+
+def incluirturma(request):
+    
+    form = TurmaForm()
+    return render(request, 'form_turma.html', {'formulario': form})

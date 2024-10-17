@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from cadastro.models import Curso, Aluno, Professor
+from cadastro.models import Curso, Aluno, Professor, Turma
 
 class CursoForm(ModelForm):
     class Meta:
@@ -14,4 +14,9 @@ class AlunoForm(ModelForm):
 class ProfessorForm(ModelForm):
     class Meta:
         model = Professor
+        fields = '__all__'
+
+class TurmaForm(ModelForm):
+    class Meta:
+        model = Turma
         fields = '__all__'

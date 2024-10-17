@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Lista de Turmas</h2>
+    <a href="{% url 'incluirturma' %}" class="btn btn-primary">
+        Cadastrar nova turma
+    </a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Data de Início</th>
+                <th>Data de Término</th>
+                <th>Horário</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in turmas %}
+            <tr>
+                <td>{{ t.curso }}</td>
+                <td>{{ t.dataInicio | date:"d/m/Y" }}</td>
+                <td>{{ t.dataTermino | date:"d/m/Y" }}</td>
+                <td>
+                    {{t.dataInicio | date:"H:i"}}
+                    às
+                    {{t.dataTermino | date:"H:i"}}
+                </td>
+                <td>Alterar Excluir</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

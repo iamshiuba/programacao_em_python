@@ -35,4 +35,9 @@ urlpatterns = [
     path('incluirprofessor', views.incluirprofessor, name='incluirprofessor'),
 
     path('excluirprofessor/<int:codigo>', views.excluirprofessor, name='excluirprofessor'),
+
+    #Turmas
+    path('listarturmas', views.listarturmas, name='listarturmas'),
+
+    path('incluirturma', views.incluirturma, name='incluirturma'),
 ]
