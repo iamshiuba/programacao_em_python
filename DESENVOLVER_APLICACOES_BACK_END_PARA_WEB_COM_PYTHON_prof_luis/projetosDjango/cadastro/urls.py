@@ -39,5 +39,9 @@ urlpatterns = [
     #Turmas
     path('listarturmas', views.listarturmas, name='listarturmas'),
 
+    path('alterarturma/<int:codigo>', views.alterarturma, name='alterarturma'),
+
     path('incluirturma', views.incluirturma, name='incluirturma'),
+
+    path('excluirturma/<int:codigo>', views.excluirturma, name='excluirturma'),
 ]

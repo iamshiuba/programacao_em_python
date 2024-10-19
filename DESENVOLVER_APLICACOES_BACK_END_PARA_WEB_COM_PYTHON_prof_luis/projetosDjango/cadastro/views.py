@@ -121,6 +121,31 @@ def listarturmas(request):
     return render(request, 'listarturmas.html', {'turmas': turmas})
 
 def incluirturma(request):
-    
+    if request.method == 'POST':
+        form = TurmaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('listarturmas')
+        print(request.POST)
+        print(form.is_valid())
+        
     form = TurmaForm()
     return render(request, 'form_turma.html', {'formulario': form})
+
+def alterarturma(request, codigo):
+    t = Turma.objects.get(id=codigo)
+
+    if request.method == 'POST':
+        form = TurmaForm(request.POST,instance=t)
+        
+        if form.is_valid():
+            form.save()
+            return redirect('listarturmas')
+
+    form = TurmaForm(instance=t)
+    return render(request, 'form_turma.html', {'formulario': form})
+
+def excluirturma(request, codigo):
+    t = Turma.objects.get(id=codigo)
+    t.delete()
+    return redirect('listarturmas')
