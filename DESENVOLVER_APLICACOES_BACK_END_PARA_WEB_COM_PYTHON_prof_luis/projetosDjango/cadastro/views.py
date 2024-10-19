@@ -126,8 +126,6 @@ def incluirturma(request):
         if form.is_valid():
             form.save()
             return redirect('listarturmas')
-        print(request.POST)
-        print(form.is_valid())
         
     form = TurmaForm()
     return render(request, 'form_turma.html', {'formulario': form})
