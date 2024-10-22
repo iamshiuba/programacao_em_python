@@ -30,3 +30,6 @@ class Turma(models.Model):
     curso = models.ForeignKey(Curso, on_delete=models.DO_NOTHING)
     dataInicio = models.DateTimeField()
     dataTermino = models.DateTimeField()
+
+    def __str__(self):
+        return self.nome
