@@ -2,6 +2,7 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .models import Curso, Aluno, Professor, Turma
 from cadastro.forms import AlunoForm, CursoForm, ProfessorForm, TurmaForm
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -26,6 +27,7 @@ def incluircurso(request):
         form = CursoForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Curso cadastrado com sucesso")
             return redirect('listarcursos')
 
     form = CursoForm()
@@ -39,6 +41,7 @@ def alterarcurso(request, codigo):
 
         if form.is_valid():
             form.save()
+            messages.success(request, "Alteração bem sucedida")
             return redirect('listarcursos')
         
     form = CursoForm(instance=c)
@@ -46,7 +49,10 @@ def alterarcurso(request, codigo):
 
 def excluircurso(request, codigo):
     c = Curso.objects.get(id=codigo)
-    c.delete()
+    try:
+        c.delete()
+    except:
+        messages.error(request, "Não é possível excluir o curso")
     return redirect('listarcursos')
 
 #Alunos
@@ -59,6 +65,7 @@ def incluiraluno(request):
         form = AlunoForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Aluno(a) cadastrado(a) com sucesso")
             return redirect('listaralunos')
 
     form = AlunoForm()
@@ -72,6 +79,7 @@ def alteraraluno(request, codigo):
         
         if form.is_valid():
             form.save()
+            messages.success(request, "Alteração bem sucedida")
             return redirect('listaralunos')
 
     form = AlunoForm(instance=a)
@@ -79,7 +87,10 @@ def alteraraluno(request, codigo):
 
 def excluiraluno(request, codigo):
     a = Aluno.objects.get(id=codigo)
-    a.delete()
+    try:
+        a.delete()
+    except:
+        messages.error(request, "Não é possível excluir aluno(a)")
     return redirect('listaralunos')
 
 #Professores
@@ -92,6 +103,7 @@ def incluirprofessor(request):
         form = ProfessorForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Professor(a) cadastrado(a) com sucesso")
             return redirect('listarprofessores')
 
     form = ProfessorForm()
@@ -105,6 +117,7 @@ def alterarprofessor(request, codigo):
         
         if form.is_valid():
             form.save()
+            messages.success(request, "Alteração bem sucedida")
             return redirect('listarprofessores')
 
     form = ProfessorForm(instance=p)
@@ -112,7 +125,10 @@ def alterarprofessor(request, codigo):
 
 def excluirprofessor(request, codigo):
     p = Professor.objects.get(id=codigo)
-    p.delete()
+    try:
+        p.delete()
+    except:
+        messages.error(request, "Não é possível excluir professor(a)")
     return redirect('listarprofessores')
 
 #Turmas
@@ -125,6 +141,7 @@ def incluirturma(request):
         form = TurmaForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Turma cadastrada com sucesso")
             return redirect('listarturmas')
         
     form = TurmaForm()
@@ -138,6 +155,7 @@ def alterarturma(request, codigo):
         
         if form.is_valid():
             form.save()
+            messages.success(request, "Alteração bem sucedida")
             return redirect('listarturmas')
 
     form = TurmaForm(instance=t)
@@ -145,5 +163,8 @@ def alterarturma(request, codigo):
 
 def excluirturma(request, codigo):
     t = Turma.objects.get(id=codigo)
-    t.delete()
+    try:
+        t.delete()
+    except:
+        messages.error(request, "Não é possível excluir a turma")
     return redirect('listarturmas')
