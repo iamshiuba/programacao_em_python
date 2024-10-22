@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt">
   {% load django_bootstrap5 %}
+  {% load static %}
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema Online</title>
     {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
   </head>
   <body>
     {% include 'menu.html' %}
     <div class="container">
+      {% for m in messages %}
+
+      <div class="alert alert-warning" role="alert">
+        {{m}}
+      </div>
+      {% endfor %}
+
       {% block content %} 
       {% endblock %}
     </div>
